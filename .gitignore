@@ -1,0 +1,6 @@
+outputs/
+__pycache__/
+.ipynb_checkpoints/
+.env
+.venv
+ProjetFinal-DataScale-DM26.pdf
