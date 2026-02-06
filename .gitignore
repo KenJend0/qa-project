@@ -4,3 +4,13 @@ __pycache__/
 .env
 .venv
 ProjetFinal-DataScale-DM26.pdf
+upload_models.py
+
+# Modèles fine-tunés (trop volumineux pour Git)
+*.safetensors
+hf/models/
+notebooks/outputs/checkpoints/
+
+# Fichiers temporaires Git
+*.bin
+training_args.bin
