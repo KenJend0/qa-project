@@ -1,6 +1,6 @@
 ### Étape 1 – Dataset et exploration
 
-Nous utilisons le dataset SQuAD (Stanford Question Answering Dataset),
+J'utilise le dataset SQuAD (Stanford Question Answering Dataset),
 un jeu de données de référence pour le question answering extractif.
 
 Chaque exemple est composé :
@@ -15,11 +15,11 @@ d'une réponse sous forme de span dans le contexte
 L'objectif du modèle est de prédire les indices de début et de fin
 de la réponse directement dans le texte du contexte.
 
-Avant l'entraînement, nous explorons le dataset afin de vérifier la
+Avant l'entraînement, j'explore le dataset afin de vérifier la
 cohérence entre le texte des réponses et leurs positions annotées
 dans les contextes.
 
-Nous utilisons le tokenizer associé au modèle Transformer
+J'utilise le tokenizer associé au modèle Transformer
 afin de transformer les textes en séquences de tokens exploitables
 par le réseau de neurones.
 
@@ -40,7 +40,7 @@ correctement ces cas lors de l'apprentissage.
 
 ### Étape 3 – Fine-tuning (Trainer)
 
-Nous fine-tunons un modèle Transformer pour la tâche de
+Je fine-tune un modèle Transformer pour la tâche de
 question answering extractif.
 Le modèle apprend à prédire deux distributions de probabilités :
 
@@ -72,7 +72,7 @@ Exact Match (EM) et F1-score, qui sont les métriques de
 référence pour le question answering extractif.
 
 Afin de calculer les métriques Precision, Recall et AUC,
-nous avons transformé la tâche en problème de classification binaire :
+j'ai transformé la tâche en problème de classification binaire :
 une prédiction est correcte si elle correspond exactement à la réponse
 de référence (Exact Match = 1), incorrecte sinon.
 Un score de confiance est calculé comme la somme des logits de début
@@ -105,7 +105,7 @@ une comparaison équitable entre les architectures.
 BERT-base est un modèle de référence pour le question answering extractif.
 Il comporte 12 couches Transformer avec attention bidirectionnelle.
 
-Nous l'utilisons comme point de comparaison principal.
+Je l'utilise comme point de comparaison principal.
 
 ### DistilBERT
 
