@@ -1,0 +1,14 @@
+torch
+transformers
+datasets
+evaluate
+accelerate
+scikit-learn
+numpy
+pandas
+fastapi
+uvicorn
+streamlit
+pdfplumber
+matplotlib
+seaborn
